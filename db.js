@@ -26,6 +26,7 @@ const Suit = sequelize.define("suit", {
 
 // associations
 Card.belongsTo(Suit);
+Suit.hasMany(Card)
 
 //seed my db
 const dbData = async () => {
@@ -98,8 +99,5 @@ const dbData = async () => {
 
 module.exports = {
   dbData,
-  models: {
-    Card,
-    Suit,
-  },
+  Card, Suit
 };

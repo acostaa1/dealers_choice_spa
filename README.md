@@ -8,7 +8,7 @@
     xcreate a model of your choice with properties of your choice
     xseed some data
 2. Phase Two Setup Express
-    create a GET api route for your model
+    xcreate a GET api route for your model
 3. Phase Three Front End
     set up a route which returns an index.html page
     add a /src/index.js which will have your client side code

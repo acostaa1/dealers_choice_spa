@@ -17,3 +17,15 @@ const setUp = async () => {
 setUp()
 
 // *** PHASE TWO - SETTING UP EXPRESS ***//
+app.get('/', async (req, res, next) => {
+    try {
+        const [suits] = await Promise.all([
+            Suit.findAll({
+                include: [Card]
+            })
+        ]);
+        res.send({suits})
+    } catch (error) {
+        console.log(error)
+    }
+})
