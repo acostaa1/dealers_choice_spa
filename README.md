@@ -6,7 +6,7 @@
     xset up a Sequelize instance (sequelize)
     xrun sync (to make sure you connect)
     xcreate a model of your choice with properties of your choice
-    seed some data
+    xseed some data
 2. Phase Two Setup Express
     create a GET api route for your model
 3. Phase Three Front End
