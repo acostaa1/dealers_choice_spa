@@ -10,7 +10,7 @@
 2. Phase Two Setup Express
     xcreate a GET api route for your model
 3. Phase Three Front End
-    set up a route which returns an index.html page
+    xset up a route which returns an index.html page
     add a /src/index.js which will have your client side code
     a console.log 'hello world will do'
     add a static route for which will enable files to be served from the src/ folder
