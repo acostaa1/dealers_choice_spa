@@ -37,3 +37,6 @@ app.get('/suits', async (req, res, next) => {
 app.get('/', (req, res, next) => {
     res.sendFile(path.join(__dirname, 'index.html'))
 })
+
+//setting up route to connect to client side index.js
+app.use('/src', express.static(path.join(__dirname, 'src')))
