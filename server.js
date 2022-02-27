@@ -40,3 +40,4 @@ app.get('/', (req, res, next) => {
 
 //setting up route to connect to client side index.js
 app.use('/src', express.static(path.join(__dirname, 'src')))
+app.use('/dist', express.static(path.join(__dirname, 'dist')))

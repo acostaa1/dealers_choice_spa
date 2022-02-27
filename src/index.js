@@ -1,2 +1,13 @@
 // ** PHASE 3 - FRONT END ** //
-console.log('hello world')
+import axios from 'axios';
+
+const start = async () => {
+    try {
+        const suits = (await axios.get('/suits')).data;
+        console.log(suits)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+start();
