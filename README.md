@@ -16,8 +16,8 @@
     xadd a static route for which will enable files to be served from the src/ folder
     xthe GET / route should return the index.html which has a script tag for the client side file
 4. Phase Four Load Data With Axios
-    add another script tag which will load the axios cdn file
-    on the client, load the data from your server, and render it
+    xadd another script tag which will load the axios cdn file
+    xon the client, load the data from your server, and render it
 5. Phase Five - Destroy
     add the ability to delete an item from the client
     it should delete the item on the server

@@ -18,14 +18,14 @@ const setUp = async () => {
 setUp()
 
 // *** PHASE TWO - SETTING UP EXPRESS ***//
-app.get('/suits', async (req, res, next) => {
+app.get('/cards', async (req, res, next) => {
     try {
-        const [suits] = await Promise.all([
-            Suit.findAll({
-                include: [Card]
+        const [cards, suits] = await Promise.all([
+            Card.findAll({
+                include: [Suit]
             })
         ]);
-        res.send({suits})
+        res.send(cards)
     } catch (error) {
         console.log(error)
     }

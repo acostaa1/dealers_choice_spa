@@ -3,8 +3,25 @@
 <HTML>
     <head>
         <script src = "/dist/main.js" defer ></script>
+        <style>
+            * {
+                padding: 1rem;
+            }
+            main {
+                display: flex;
+            }
+            main > * {
+                flex: 1;
+            }
+        </style>
     </head>
     <body>
         <h1>Pick a Card! </h1>
+        <main>
+            <div>
+                <h2>Cards</h2>
+                <ul id = 'deck'></ul>
+            </div>
+        </main>
     </body>
 </HTML>
