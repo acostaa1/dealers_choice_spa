@@ -8,11 +8,19 @@
                 padding: 1rem;
             }
             main {
-                display: flex;
+                display: inline-flex;
             }
-            main > * {
+            main > div > ul{
+                list-style: none;
                 flex: 1;
+                display: flex;
+                flex-wrap: wrap
             }
+            main > div > ul > li {
+                flex: 0 0 27%;
+                align-items: center;
+            }
+            
         </style>
     </head>
     <body>
